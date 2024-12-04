@@ -1,4 +1,9 @@
 
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
 .header{
     max-width: 1920px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
