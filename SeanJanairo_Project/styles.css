@@ -29,6 +29,10 @@ body{
     display: flex;
     flex-direction: row;
     max-width: 1920px;
+    height:800px;
+    background-image:url("assets/banner/BannerDesign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .BannerText{
@@ -65,4 +69,29 @@ body{
 
 .BannerImg img[src="assets/banner/BannerDesign.png"]{
     width: 600px;
+}
+
+.OurStory{
+    display:flex;
+    flex-direction: row;
+}
+
+.OurStory:nth-child(2n){
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+    width: 700px;
+    align-items: center;
+    color: blue;
+}
+
+#ourstorytitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 74px;
+}
+#dash{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
