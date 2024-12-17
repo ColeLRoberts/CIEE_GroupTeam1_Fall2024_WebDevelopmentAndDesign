@@ -4,28 +4,49 @@ body{
     flex-direction: column;
     margin: 0;
 }
-.header{
+
+/* Header section*/
+
+header{
     max-width: 1920px;
+    height: 65px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: antiquewhite;
+
     
 }
+header > a{
+    color:black;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+header > a:hover{
+    background-color: rgb(236, 236, 236);
+}
 .Logo img[src="assets/header/Logo.png"]{
-    width: 120px;
+    width: 250px;
     height: 50px;
+    align-self: center;
 }
 
 .OrderNow{
-    background-color: darkred;
-    color: white;
+    background-color:white;
+    color: black;
     padding: 10px 10px 10px 10px;
+    border: 1px;
+    border-style: solid;
 }
 
-.banner{
+/* Banner section*/
+
+#banner{
     display: flex;
     flex-direction: row;
     max-width: 1920px;
@@ -58,42 +79,49 @@ body{
     width: 650px;
     line-height: 50px;
 }
+
 .bannerbutton{
-    color: white;
+    color: black;
     font-size: 20px;
     padding: 10px 10px 10px 10px;
-    background-color:rgb(57, 57, 57);
+    background-color:white;
     width: 120px;
     display: flex;
     justify-content: center;
+    border: 1px;
+    border-style:solid;
+    text-decoration: none;
 }
 
 .BannerImg img[src="assets/banner/BannerDesign.png"]{
     width: 600px;
 }
 
-.OurStory{
+/* Our story section*/
+
+#OurStory{
     display:flex;
     flex-direction: row;
+    justify-items: center;
 }
 
 #storyimgs{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    width:1800px;
-    height: 500px;
-    column-gap: 30px;
+    width:500px;
+    height: 310px;
+    column-gap: 10px;
     margin-left: 20px;
 }
 
 #storyimgs > img{
-    width:300px;
-    height: 220px;
+    width:200px;
+    height: 145px;
 }
 #storytext{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right:40px;
+    margin-right:28px;
 }
 
 
@@ -101,12 +129,418 @@ body{
     font-weight: bold;
     font-size: 74px;
 }
-#dash{
-    font-weight: bold;
-    font-size: 50px;
-}
+
 #story{
-    font-size: 20px;
+    font-size: 14px;
     line-height: 50px;
     width:750px;
+}
+
+/* Reasons section*/
+
+#Reasons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#Reasons > img{
+    width: 120px;
+    height: 120px;
+}
+#Reasons > p{
+    width: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:40px;
+    align-self: center;
+}
+
+/*Quote section*/
+#Quote{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#QuoteText{
+    display:flex;
+    flex-direction: column;
+    width: 700px;
+    align-self: center;
+}
+
+#HisWords{
+    font-family: cursive;
+    font-size: 50px;
+}
+#Jean{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Quote > img{
+    width:400px;
+    height:280px;
+}
+
+/* Bestsellers section*/
+
+#BestSellers > img{
+    width: 1200px;
+    align-content: center;
+    display: flex;
+    justify-self: center;
+}
+
+/* Locations section*/
+
+#Locations{
+    display:flex;
+    flex-direction: row;
+    max-width:1920px;
+    justify-content: space-evenly;
+}
+#Locations > img{
+    width: 600px;
+}
+
+/* Gallery section*/
+#Gallery{
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+    justify-content: center;
+}
+#Gallery > img{
+   max-width: 1440px;
+}
+
+/* Footer section*/
+
+footer{
+   background-color: antiquewhite;
+    max-width: 1920px;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+}
+footer > p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    align-self: center;
+}
+footer > img{
+    align-self: center;
+    width: 180px;
+}
+
+/* MEDIUM WIDTH */
+@media screen and (max-width:1240px){
+    /* Our story section*/
+    #banner{
+        display: flex;
+        flex-direction: row;
+        max-width: 1240px;
+        height:650px;
+        background-image:url("assets/banner/BannerDesign.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #OurStory{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        max-width:1240px;
+    }
+
+    #storyimgs{
+        display:flex;
+        flex-direction:row;
+        width:1000px;
+        height: 170px;
+        column-gap: 10px;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+
+    #storyimgs > img{
+        width:200px;
+        height: 145px;
+    }
+    #storytext{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+    }
+    #ourstorytitle{
+        font-weight: bold;
+        font-size: 74px;
+    }
+
+    #story{
+        font-size: 14px;
+        line-height: 50px;
+        width:750px;
+    }
+
+    #QuoteText{
+        display:flex;
+        flex-direction: column;
+        width: 500px;
+        align-self: center;
+    }
+    
+    #HisWords{
+        font-family: cursive;
+        font-size: 28px;
+    }
+    #Jean{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #Quote > img{
+        width:250px;
+        height:180px;
+    }
+
+    #BestSellers > img{
+        width: 850px;
+        align-content: center;
+        display: flex;
+        justify-self: center;
+    }
+
+
+    #Locations > img{
+        width: 450px;
+    }
+    #Gallery{
+        display: flex;
+        flex-direction: row;
+        max-width: 1240px;
+        justify-content: center;
+    }
+    #Gallery > img{
+       max-width: 1100px;
+    }
+}
+
+/* SMALLER WIDTH */
+
+@media screen and (max-width:800px){
+    header{
+        max-width: 800px;
+        height: 50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    header > a{
+        color:black;
+        background-color: white;
+        border: 1px;
+        border-style: solid;
+        padding: 6px 6px 6px 6px;
+        text-decoration: none;
+        font-size: 10px;
+}
+    .Logo img[src="assets/header/Logo.png"]{
+        width: 180px;
+        height: 34px;
+        align-self: center;
+}
+#banner{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    height:430px;
+    background-image:url("assets/banner/BannerDesign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#OurStory{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width:800px;
+}
+
+#storyimgs{
+    display:flex;
+    flex-direction:row;
+    width:650px;
+    height: 170px;
+    column-gap: 9px;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+#storyimgs > img{
+    width:120px;
+    height: 80px;
+}
+#storytext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+}
+#ourstorytitle{
+    font-weight: bold;
+    font-size: 55px;
+}
+
+#story{
+    font-size: 14px;
+    line-height: 50px;
+    width:550px;
+}
+
+#Reasons > img{
+    width: 75px;
+    height: 75px;
+}
+#Reasons > p{
+    width: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:25px;
+    align-self: center;
+    font-size: 10px;
+}
+
+#QuoteText{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    align-self: center;
+}
+
+#HisWords{
+    font-family: cursive;
+    font-size: 23px;
+}
+#Jean{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Quote > img{
+    width:180px;
+    height:120px;
+}
+
+#BestSellers > img{
+    width: 600px;
+    align-content: center;
+    display: flex;
+    justify-self: center;
+}
+
+
+#Locations > img{
+    width: 250px;
+}
+#Gallery{
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+    justify-content: center;
+}
+#Gallery > img{
+   max-width: 600px;
+}
+#banner{
+    height:550px;
+}
+.BannerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    max-width: 1000px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    row-gap: 0px;
+}
+
+.roasted{
+    font-size: 55px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+.paragraph{
+    font-size: 15px;
+    width: 400px;
+    line-height: 50px;
+}
+
+.bannerbutton{
+    color: black;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color:white;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    border: 1px;
+    border-style:solid;
+    text-decoration: none;
+}
+}
+/* SMALLEST SCREEN*/
+@media screen and (max-width:500px){
+    header > a{
+        color:black;
+        background-color: white;
+        border: 1px;
+        border-style: solid;
+        padding: 4px 4px 4px 4px;
+        text-decoration: none;
+        font-size: 7px;
+}
+    .Logo img[src="assets/header/Logo.png"]{
+        width: 150px;
+        height: 30px;
+        align-self: center;
+}
+#banner{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    height: 400px;
+    background-image:url("assets/banner/BannerDesign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#OurStory{
+    margin-top:170px;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width:500px;
+}
+#storyimgs{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:440px;
+    height: 100px;
+    column-gap: 10px;
+    margin-left: 20px;
+}
+
+#storyimgs > img{
+    width:100px;
+    height: 70px;
+}
+#story{
+    font-size:12px;
+    width:380px;
+}
 }
